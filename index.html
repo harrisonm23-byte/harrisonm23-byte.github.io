@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<title>Harrison C. Margolin</title>
+<meta name="description" content="Harrison C. Margolin. Model evaluations, agent safety and the economics of AI.">
+<meta name="author" content="Harrison C. Margolin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Harrison C. Margolin">
+<meta property="og:description" content="Model evaluations, agent safety and the economics of AI.">
+<meta property="og:url" content="https://harrisonm23-byte.github.io/">
+<meta property="og:site_name" content="Harrison C. Margolin">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://harrisonm23-byte.github.io/">
+<style>
+:root{
+  --paper:#FFFFFF; --ink:#000000; --sub:#444444; --rule:#CCCCCC; --link:#1F3864; --panel:#F7F7F7;
+  --serif:'Times New Roman',Times,'Nimbus Roman',serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+main{max-width:760px;margin:0 auto;padding:72px 16px 64px}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+p{margin:0 0 14px}
+header{text-align:center;margin:0 0 34px}
+h1{font-weight:400;font-variant:small-caps;font-size:clamp(30px,5vw,40px);line-height:1.15;letter-spacing:.03em;margin:0 0 10px}
+.affil{font-style:italic;font-size:18px;margin:0 0 14px}
+.contact{font-size:16.5px;margin:0}
+.contact .sep{color:var(--rule);margin:0 8px}
+nav{font-size:16.5px;margin:14px 0 0}
+nav a{color:var(--ink)}
+nav .sep{color:var(--rule);margin:0 8px}
+.abstract{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:6px 0 10px;margin:0 0 8px}
+.abstract h2{font-size:17px;font-variant:small-caps;font-weight:400;letter-spacing:.08em;text-align:center;margin:14px 0 14px}
+.about{display:grid;grid-template-columns:136px 1fr;gap:22px;align-items:start}
+.photo{width:136px;aspect-ratio:4/5;border:1px solid var(--rule);background:var(--panel);display:grid;place-items:center;overflow:hidden;position:relative}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo span{font-variant:small-caps;letter-spacing:.06em;color:var(--sub);font-size:18px}
+.about p{font-size:17.5px;text-align:justify;hyphens:auto}
+.interests{font-size:17px;hyphens:manual}
+section{margin-top:44px}
+h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
+.news{list-style:none;padding:0;margin:0}
+.news li{display:grid;grid-template-columns:82px 1fr;gap:12px;margin:0 0 9px;font-size:17px}
+.news time{font-weight:700;white-space:nowrap}
+.bib{list-style:none;padding:0;margin:0;counter-reset:ref}
+.bib>li{counter-increment:ref;position:relative;padding-left:40px;margin:0 0 22px}
+.bib>li::before{content:"[" counter(ref) "]";position:absolute;left:0;top:0}
+.bib.plain>li{padding-left:0}
+.bib.plain>li::before{content:none}
+.t{font-weight:700;margin:0 0 2px}
+.who,.where{margin:0;font-size:17px}
+.where{font-style:italic}
+.what{margin:6px 0 4px;font-size:16.5px;color:var(--sub);line-height:1.5}
+.go{margin:0;font-size:16.5px}
+.go .sep{color:var(--rule);margin:0 7px}
+.cv{list-style:none;padding:0;margin:0}
+.cv li{display:grid;grid-template-columns:110px 1fr;gap:12px;margin:0 0 12px;font-size:17px}
+.cv .when{color:var(--sub);white-space:nowrap}
+.cv .org{font-weight:700}
+.cv .role{display:block;color:var(--sub);font-size:16.5px}
+.cv.nodate li{grid-template-columns:1fr}
+footer{max-width:760px;margin:0 auto;padding:0 16px 56px;font-size:15px;color:var(--sub)}
+footer .in{border-top:1px solid var(--rule);padding-top:18px}
+@media (max-width:600px){
+  main{padding-top:48px}
+  .about{grid-template-columns:1fr;gap:14px}
+  .photo{width:112px;margin:0 auto}
+  .about p{text-align:left;hyphens:manual}
+  .news li{grid-template-columns:1fr;gap:0}
+  .bib>li{padding-left:34px}
+  .cv li{grid-template-columns:1fr;gap:0}
+}
+@media print{nav{display:none}a{color:var(--ink)}}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Harrison C. Margolin</h1>
+  <p class="affil">Model evaluations, SpaceXAI</p>
+  <p class="contact">
+    <a href="mailto:harrisonm23@gmail.com">Email</a><span class="sep">|</span>
+    <a href="https://github.com/harrisonm23-byte">GitHub</a>
+  </p>
+  <nav aria-label="Sections">
+    <a href="#news">News</a><span class="sep">|</span>
+    <a href="#research">Research</a><span class="sep">|</span>
+    <a href="#writing">Writing</a><span class="sep">|</span>
+    <a href="#experience">Experience</a>
+  </nav>
+</header>
+
+<div class="abstract">
+  <h2>About</h2>
+  <div class="about">
+    <div class="photo">
+      <img src="photo.jpg" alt="Harrison C. Margolin" onerror="this.remove()">
+      <span aria-hidden="true">hcm</span>
+    </div>
+    <div>
+      <p>I study how AI agents behave under economic pressure, and what that means for markets and for governance.</p>
+      <p>I work on model evaluations at SpaceXAI. I write evaluation items and grading rubrics for Grok, and review other graders’ scoring. My latest paper, <a href="https://harrisonm23-byte.github.io/push-down-the-mountain/"><i>A Push Down the Mountain</i></a>, tests whether framed messages push a long-horizon trading agent toward collusion, and whether steering its internal state changes that.</p>
+      <p>I also write on AI investment and the U.S. economy, and on how past liability regimes can guide AI governance. Before AI, I worked in M&amp;A at Paul Hastings and in investment banking at Guggenheim Partners. I studied economics at UC Berkeley.</p>
+      <p class="interests">Research interests: <b>agent safety evaluations</b>, <b>interpretability and steering</b>, <b>the macroeconomics of AI</b> and <b>technical AI governance</b>.</p>
+    </div>
+  </div>
+</div>
+
+<section id="news">
+  <h2>News</h2>
+  <ul class="news">
+    <li><time datetime="2026-10">Oct 2026</time><span>Released <a href="https://harrisonm23-byte.github.io/push-down-the-mountain/"><i>A Push Down the Mountain</i></a>, on framing effects and collusion in a long-horizon LLM agent.</span></li>
+    <li><time datetime="2026-10">Oct 2026</time><span>Posted <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7662938"><i>AI Investment and Economic Outcomes in the U.S.</i></a> on SSRN.</span></li>
+    <li><time datetime="2026-09">Sep 2026</time><span>Released <a href="https://harrisonm23-byte.github.io/The_Ratio_Method/"><i>Precedents</i></a>, a report matching eight frontier AI risks to sixteen liability regimes.</span></li>
+    <li><time datetime="2026-06">Jun 2026</time><span>Published a <a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/">comparison</a> of the Ratio Method with <i>Policy on the AI Exponential</i>.</span></li>
+    <li><time datetime="2026-05">May 2026</time><span>Joined xAI to work on model evaluations.</span></li>
+  </ul>
+</section>
+
+<section id="research">
+  <h2>Research</h2>
+  <ol class="bib">
+    <li>
+      <p class="t">A Push Down the Mountain: Framing Effects and Internal State Interventions on Collusive Behavior in a Long-Horizon LLM Agent</p>
+      <p class="who">Harrison C. Margolin</p>
+      <p class="where">Working manuscript, October 2026</p>
+      <p class="what">Gemma 3 12B trades silver in a market built from the London silver-fixing case. A counterparty asks it to collude across 260 episodes. The study tests how framing shifts its choices, and whether injecting internal states at layer 22 changes them.</p>
+      <p class="go"><a href="https://harrisonm23-byte.github.io/push-down-the-mountain/">Read online</a><span class="sep">|</span><a href="https://harrisonm23-byte.github.io/push-down-the-mountain/A_Push_Down_the_Mountain.pdf">PDF</a><span class="sep">|</span><a href="https://github.com/harrisonm23-byte/HuggingFaceML1">Code</a></p>
+    </li>
+    <li>
+      <p class="t">AI Investment and Economic Outcomes in the U.S.</p>
+      <p class="who">Harrison C. Margolin</p>
+      <p class="where">Working paper, SSRN, October 2026</p>
+      <p class="what">A macro view of the AI capital-spending cycle and its link to U.S. economic outcomes.</p>
+      <p class="go"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7662938">SSRN</a></p>
+    </li>
+    <li>
+      <p class="t">Precedents: Matching Frontier AI Risks to Liability Regimes</p>
+      <p class="who">Harrison C. Margolin</p>
+      <p class="where">The Ratio Method report, 2026</p>
+      <p class="what">Profiles eight risks from the International AI Safety Report 2026 on the Ratio Method’s variables. Matches each risk to the closest of sixteen historical liability regimes.</p>
+      <p class="go"><a href="https://harrisonm23-byte.github.io/The_Ratio_Method/">Read online</a><span class="sep">|</span><a href="https://harrisonm23-byte.github.io/The_Ratio_Method/The%20Ratio%20Method%20-%20Precedents%20(2026).pdf">PDF</a><span class="sep">|</span><a href="https://github.com/harrisonm23-byte/The_Ratio_Method">Code</a></p>
+    </li>
+    <li>
+      <p class="t">The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution</p>
+      <p class="who">Harrison C. Margolin and Grant H. Frazier</p>
+      <p class="where">St. Mary’s Law Journal, vol. 52, p. 679, 2021</p>
+      <p class="what">A framework for designing liability rules for AI, IoT and gene-editing harms. It profiles a risk on seven law-and-economics variables and matches it to precedent regimes.</p>
+      <p class="go"><a href="https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/">Article page</a><span class="sep">|</span><a href="https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&amp;context=thestmaryslawjournal">PDF</a></p>
+    </li>
+  </ol>
+</section>
+
+<section id="writing">
+  <h2>Writing</h2>
+  <ol class="bib plain">
+    <li>
+      <p class="t">An Analytical Comparison of the Ratio Method vs. Policy on the AI Exponential</p>
+      <p class="where">Essay, June 2026</p>
+      <p class="what">Traces where Dario Amodei’s 2026 policy proposals converge with the 2021 Ratio Method, and where gaps remain.</p>
+      <p class="go"><a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/">Read online</a><span class="sep">|</span><a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/Policy%20on%20AI%20Exponential%20(2026)%20vs.%20Ratio%20Method%20(2021).pdf">PDF</a></p>
+    </li>
+    <li>
+      <p class="t">Economic &amp; Policy Review, 2025</p>
+      <p class="where">Semi-annual review, Zenodo</p>
+      <p class="what">Macro and cross-asset signals, built around the term premium. Covers the national debt and the AI bet priced into markets.</p>
+      <p class="go"><a href="https://doi.org/10.5281/zenodo.17163116">Zenodo</a></p>
+    </li>
+  </ol>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ul class="cv">
+    <li><span class="when">2026–present</span><span><span class="org">SpaceXAI</span><span class="role">Model evaluations for Grok. Writes evaluation items and grading rubrics, and reviews expert graders’ scoring.</span></span></li>
+    <li><span class="when">2025–2026</span><span><span class="org">Micro1</span><span class="role">AI safety and evaluation projects for frontier labs: adversarial, refusal-calibration and rubric work.</span></span></li>
+    <li><span class="when">2023</span><span><span class="org">Guggenheim Partners</span><span class="role">Investment banking</span></span></li>
+    <li><span class="when">2021–2023</span><span><span class="org">Paul Hastings</span><span class="role">Mergers and acquisitions</span></span></li>
+  </ul>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul class="cv nodate">
+    <li><span><span class="org">University of California, Berkeley</span><span class="role">B.A., Economics</span></span></li>
+    <li><span><span class="org">UCLA School of Law</span><span class="role">J.D., Dean’s Scholar</span></span></li>
+  </ul>
+</section>
+
+</main>
+<footer><div class="in">Last updated November 2026.</div></footer>
+</body>
+</html>
