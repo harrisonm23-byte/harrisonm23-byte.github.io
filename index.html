@@ -69,6 +69,20 @@ h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
 .cv .org{font-weight:700}
 .cv .role{display:block;color:var(--sub);font-size:16.5px}
 .cv.nodate li{grid-template-columns:1fr}
+.lst{border-top:1px solid var(--rule);padding-top:20px}
+.lst a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.lst h2{margin:0 0 6px}
+.lst h3{font-weight:700;font-style:italic;font-size:18.5px;margin:20px 0 8px}
+.pubs{list-style:none;padding:0;margin:0}
+.pubs li{margin:0 0 18px}
+.pubs .t{margin:0;font-weight:400}
+.pubs .v{margin:0;padding-left:26px;color:var(--sub);font-size:16.5px}
+.pubs .v a{color:var(--sub)}
+.pubs .sub2{color:var(--ink);font-size:17px;padding-left:0}
+.pubs .d{margin:4px 0 0;padding-left:26px;font-size:16.5px;line-height:1.5}
+.edu{list-style:none;padding:0;margin:8px 0 0}
+.edu li{margin:0 0 8px}
+.edu .v{display:block;padding-left:26px;color:var(--sub);font-size:16.5px}
 footer{max-width:760px;margin:0 auto;padding:0 16px 56px;font-size:15px;color:var(--sub)}
 footer .in{border-top:1px solid var(--rule);padding-top:18px}
 @media (max-width:600px){
@@ -125,61 +139,53 @@ footer .in{border-top:1px solid var(--rule);padding-top:18px}
   </ul>
 </section>
 
-<section id="research">
-  <h2>Research</h2>
-  <ol class="bib">
-    <li>
-      <p class="t">A Push Down the Mountain: Framing Effects and Internal State Interventions on Collusive Behavior in a Long-Horizon LLM Agent</p>
-      <p class="where">Working manuscript, October 2026 (arXiv pending)</p>
-      <p class="what">Gemma 3 12B trades silver in a market built from the London silver-fixing case. A counterparty asks it to collude across 260 episodes. The study tests how framing shifts its choices, and whether injecting internal states at layer 22 changes them.</p>
-      <p class="go"><a href="https://harrisonm23-byte.github.io/push-down-the-mountain/">Read online</a><span class="sep">|</span><a href="https://harrisonm23-byte.github.io/push-down-the-mountain/A_Push_Down_the_Mountain.pdf">PDF</a><span class="sep">|</span><a href="https://github.com/harrisonm23-byte/HuggingFaceML1">Code</a></p>
-    </li>
-    <li>
-      <p class="t">AI Investment and Economic Outcomes in the U.S.</p>
-      <p class="where">Working paper, SSRN, October 2026</p>
-      <p class="what">A macro view of the AI capital-spending cycle and its link to U.S. economic outcomes.</p>
-      <p class="go"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7662938">SSRN</a></p>
-    </li>
-    <li>
-      <p class="t">Precedents: Matching Frontier AI Risks to Liability Regimes</p>
-      <p class="where">The Ratio Method report, 2026</p>
-      <p class="what">Profiles eight risks from the International AI Safety Report 2026 on the Ratio Method’s variables. Matches each risk to the closest of sixteen historical liability regimes.</p>
-      <p class="go"><a href="https://harrisonm23-byte.github.io/The_Ratio_Method/">Read online</a><span class="sep">|</span><a href="https://harrisonm23-byte.github.io/The_Ratio_Method/The%20Ratio%20Method%20-%20Precedents%20(2026).pdf">PDF</a><span class="sep">|</span><a href="https://github.com/harrisonm23-byte/The_Ratio_Method">Code</a></p>
-    </li>
-    <li>
-      <p class="t">The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution</p>
-      <p class="who">with Grant Frazier</p>
-      <p class="where">St. Mary’s Law Journal, vol. 52, p. 679, 2021</p>
-      <p class="what">A framework for designing liability rules for AI, IoT and gene-editing harms. It profiles a risk on seven law-and-economics variables and matches it to precedent regimes.</p>
-      <p class="go"><a href="https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/">Article page</a><span class="sep">|</span><a href="https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&amp;context=thestmaryslawjournal">PDF</a></p>
-    </li>
-  </ol>
+<section id="research" class="lst">
+<h2>Research</h2>
+
+<h3>AI Safety and Evaluations</h3>
+<ul class="pubs">
+  <li><p class="t"><a href="https://harrisonm23-byte.github.io/push-down-the-mountain/">A Push Down the Mountain: Framing Effects and Internal State Interventions on Collusive Behavior in a Long-Horizon LLM Agent</a></p>
+  <p class="v">Working manuscript, October 2026 (arXiv pending) · <a href="https://harrisonm23-byte.github.io/push-down-the-mountain/A_Push_Down_the_Mountain.pdf">PDF</a> · <a href="https://github.com/harrisonm23-byte/HuggingFaceML1">Code</a></p>
+  <p class="d">Gemma 3 12B trades silver in a market built from the London silver-fixing case. A counterparty asks it to collude across 260 episodes. The study tests how framing shifts its choices, and whether injecting internal states at layer 22 changes them.</p></li>
+</ul>
+
+<h3>Economics of AI</h3>
+<ul class="pubs">
+  <li><p class="t"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7662938">AI Investment and Economic Outcomes in the U.S.</a></p>
+  <p class="v">Working paper, SSRN, October 2026</p>
+  <p class="d">A macro view of the AI capital-spending cycle and its link to U.S. economic outcomes.</p></li>
+</ul>
+
+<h3>AI Governance and Liability</h3>
+<ul class="pubs">
+  <li><p class="t"><a href="https://harrisonm23-byte.github.io/The_Ratio_Method/">Precedents: Matching Frontier AI Risks to Liability Regimes</a></p>
+  <p class="v sub2">The eight frontier AI risks of the <i>International AI Safety Report 2026</i>, read against sixteen existing liability regimes</p>
+  <p class="v">The Ratio Method report, 2026 · <a href="https://harrisonm23-byte.github.io/The_Ratio_Method/The%20Ratio%20Method%20-%20Precedents%20(2026).pdf">PDF</a> · <a href="https://github.com/harrisonm23-byte/The_Ratio_Method">Code</a></p>
+  <p class="d">Profiles eight risks from the International AI Safety Report 2026 on the Ratio Method’s variables. Matches each risk to the closest of sixteen historical liability regimes.</p></li>
+  <li><p class="t"><a href="https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/">The Ratio Method: Addressing Complex Tort Liability in the Fourth Industrial Revolution</a> (with Grant Frazier)</p>
+  <p class="v">St. Mary’s Law Journal, vol. 52, p. 679, 2021 · <a href="https://commons.stmarytx.edu/cgi/viewcontent.cgi?article=1115&amp;context=thestmaryslawjournal">PDF</a></p>
+  <p class="d">A framework for designing liability rules for AI, IoT and gene-editing harms. It profiles a risk on seven law-and-economics variables and matches it to precedent regimes.</p></li>
+</ul>
 </section>
 
-<section id="writing">
-  <h2>Writing</h2>
-  <ol class="bib plain">
-    <li>
-      <p class="t">An Analytical Comparison of the Ratio Method and Amodei’s <i>Policy on the AI Exponential</i></p>
-      <p class="where">Essay, June 2026</p>
-      <p class="what">Traces where Dario Amodei’s 2026 policy proposals converge with the 2021 Ratio Method, and where gaps remain.</p>
-      <p class="go"><a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/">Read online</a><span class="sep">|</span><a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/Policy%20on%20AI%20Exponential%20(2026)%20vs.%20Ratio%20Method%20(2021).pdf">PDF</a></p>
-    </li>
-    <li>
-      <p class="t">Economic &amp; Policy Review, 2025</p>
-      <p class="where">Semi-annual review, Zenodo</p>
-      <p class="what">Macro and cross-asset signals, built around the term premium. Covers the national debt and the AI bet priced into markets.</p>
-      <p class="go"><a href="https://doi.org/10.5281/zenodo.17163116">Zenodo</a></p>
-    </li>
-  </ol>
+<section id="writing" class="lst">
+<h2>Writing</h2>
+<ul class="pubs">
+  <li><p class="t"><a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/">An Analytical Comparison of the Ratio Method and Amodei’s <i>Policy on the AI Exponential</i></a></p>
+  <p class="v">Essay, June 2026 · <a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/Policy%20on%20AI%20Exponential%20(2026)%20vs.%20Ratio%20Method%20(2021).pdf">PDF</a></p>
+  <p class="d">Traces where Dario Amodei’s 2026 policy proposals converge with the 2021 Ratio Method, and where gaps remain.</p></li>
+  <li><p class="t"><a href="https://doi.org/10.5281/zenodo.17163116">Economic &amp; Policy Review, 2025</a></p>
+  <p class="v">Semi-annual review, Zenodo, 2025</p>
+  <p class="d">Macro and cross-asset signals, built around the term premium. Covers the national debt and the AI bet priced into markets.</p></li>
+</ul>
 </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <ul class="cv nodate">
-    <li><span><span class="org">University of California, Berkeley</span><span class="role">B.A., Economics, Highest Distinction</span></span></li>
-    <li><span><span class="org">UCLA School of Law</span><span class="role">J.D., Dean’s Scholar</span></span></li>
-  </ul>
+<section id="education" class="lst">
+<h2>Education</h2>
+<ul class="edu">
+  <li>University of California, Berkeley<span class="v">B.A., Economics, Highest Distinction</span></li>
+  <li>UCLA School of Law<span class="v">J.D., Dean’s Scholar</span></li>
+</ul>
 </section>
 
 </main>
