@@ -94,6 +94,10 @@ h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
 #education{display:flow-root}
 @media (max-width:640px){.pics{float:none;margin:10px 0 14px;justify-content:center}.pics img{height:120px}}
 @media print{.pics{display:none}}
+.edu{display:flow-root}
+.edu li{position:relative;padding-right:18px}
+.edu li::after{content:"";position:absolute;right:4px;top:6px;bottom:4px;width:4px;border-radius:2px;background:linear-gradient(#003262 0 50%,#FDB515 50% 100%)}
+.edu li:nth-child(2)::after{background:linear-gradient(#2774AE 0 50%,#FFD100 50% 100%)}
 footer{max-width:760px;margin:0 auto;padding:0 16px 56px;font-size:15px;color:var(--sub)}
 footer .in{border-top:1px solid var(--rule);padding-top:18px}
 @media (max-width:600px){
