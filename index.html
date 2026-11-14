@@ -70,7 +70,8 @@ h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
 #research{border-top:0;padding-top:0}
 .lst a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
 .lst h2{margin:0 0 6px}
-.lst h3{font-weight:700;font-style:italic;font-size:18.5px;margin:20px 0 8px}
+.lst h3{font-weight:700;font-style:italic;font-size:18.5px;margin:30px 0 8px}
+.lst h2+h3{margin-top:18px}
 .pubs{list-style:none;padding:0;margin:0}
 .pubs li{margin:0 0 18px}
 .pubs .t{margin:0;font-weight:400}
@@ -98,6 +99,7 @@ h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
 .edu li{position:relative;padding-left:16px}
 .edu li::before{content:"";position:absolute;left:0;top:6px;bottom:4px;width:4px;border-radius:2px;background:linear-gradient(#003262 0 50%,#FDB515 50% 100%)}
 .edu li:nth-child(2)::before{background:linear-gradient(#2774AE 0 50%,#FFD100 50% 100%)}
+@media (max-width:640px){.pubs .v,.pubs .d{padding-left:12px}.edu .v{padding-left:12px}}
 footer{max-width:760px;margin:0 auto;padding:0 16px 56px;font-size:15px;color:var(--sub)}
 footer .in{border-top:1px solid var(--rule);padding-top:18px}
 @media (max-width:600px){
@@ -150,16 +152,15 @@ footer .in{border-top:1px solid var(--rule);padding-top:18px}
 <h3>AI Safety and Evaluations</h3>
 <ul class="pubs">
   <li><p class="t"><a href="https://harrisonm23-byte.github.io/push-down-the-mountain/">A Push Down the Mountain: Framing Effects and Internal State Interventions on Collusive Behavior in a Long-Horizon LLM Agent</a></p>
-  <p class="v">Working manuscript, October 2026 (arXiv pending) · <a href="https://harrisonm23-byte.github.io/push-down-the-mountain/A_Push_Down_the_Mountain.pdf">PDF</a> · <a href="https://github.com/harrisonm23-byte/HuggingFaceML1">Code</a></p>
+  <p class="v">Working paper, October 2026 (submitted to arXiv) · <a href="https://harrisonm23-byte.github.io/push-down-the-mountain/A_Push_Down_the_Mountain.pdf">PDF</a> · <a href="https://github.com/harrisonm23-byte/HuggingFaceML1">Code</a></p>
   <p class="d">Gemma 3 12B trades silver in a market built from the London silver-fixing case. A counterparty asks it to collude across 260 episodes. The study tests how framing shifts its choices and where its words and trades diverge. It then tests whether internal states can be used to monitor and steer that behavior. Blame framing raised participation from 5% to 33%.</p></li>
 </ul>
 
 <h3>AI Governance and Liability</h3>
 <ul class="pubs">
   <li><p class="t"><a href="https://harrisonm23-byte.github.io/The_Ratio_Method/">Precedents: Matching Frontier AI Risks to Liability Regimes</a></p>
-  <p class="v sub2">The eight frontier AI risks of the <i>International AI Safety Report 2026</i>, read against sixteen existing liability regimes</p>
   <p class="v">The Ratio Method report, 2026 · <a href="https://harrisonm23-byte.github.io/The_Ratio_Method/The%20Ratio%20Method%20-%20Precedents%20(2026).pdf">PDF</a> · <a href="https://github.com/harrisonm23-byte/The_Ratio_Method">Code</a></p>
-  <p class="d">Profiles each risk on a common set of law-and-economics variables, then matches it to the closest historical regime.</p></li>
+  <p class="d">Reads the eight frontier AI risks of the <i>International AI Safety Report 2026</i> against sixteen existing liability regimes. Profiles each risk on a common set of law-and-economics variables, then matches it to the closest historical regime.</p></li>
   <li><p class="t"><a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/">An Analytical Comparison of the Ratio Method and Amodei’s <i>Policy on the AI Exponential</i></a></p>
   <p class="v">Essay, June 2026 · <a href="https://harrisonm23-byte.github.io/ratio-method-amodei-comparison/Policy%20on%20AI%20Exponential%20(2026)%20vs.%20Ratio%20Method%20(2021).pdf">PDF</a></p>
   <p class="d">Compares Dario Amodei’s June 2026 call for binding regulation of frontier AI with the 2021 Ratio Method across sixteen topics, including the aviation model, extreme-risk tiers, and who bears the cost of harm. Finds that the two fit together: Amodei’s proposal reviews models before release, and the Ratio Method addresses liability after it.</p></li>
