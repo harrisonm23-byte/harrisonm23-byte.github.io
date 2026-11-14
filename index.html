@@ -88,10 +88,12 @@ h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
 
 @media (min-width:1000px){main{position:relative}.abstract{position:static}.pic{float:none;margin:0;position:absolute;right:-40px;top:72px;width:130px}.photo{width:130px;height:130px}}
 @media print{.pic{display:none}}
-.sf{float:right;width:250px;height:auto;border-radius:3px;margin:-34px 48px 0 24px}
+.pics{float:right;display:flex;gap:14px;align-items:flex-start;margin:-34px 0 0 24px}
+.pics img{height:167px;width:auto;border-radius:3px;display:block}
+.pics .cov{box-shadow:0 0 0 1px var(--rule)}
 #education{display:flow-root}
-@media (max-width:640px){.sf{float:none;display:block;width:100%;margin:10px 0 14px}}
-@media print{.sf{display:none}}
+@media (max-width:640px){.pics{float:none;margin:10px 0 14px;justify-content:center}.pics img{height:120px}}
+@media print{.pics{display:none}}
 footer{max-width:760px;margin:0 auto;padding:0 16px 56px;font-size:15px;color:var(--sub)}
 footer .in{border-top:1px solid var(--rule);padding-top:18px}
 @media (max-width:600px){
@@ -175,7 +177,7 @@ footer .in{border-top:1px solid var(--rule);padding-top:18px}
 
 <section id="education" class="lst">
 <h2>Education</h2>
-<img class="sf" src="sf.jpg?v=2" alt="At the Golden Gate Bridge, San Francisco" width="720" height="480">
+<div class="pics"><a href="https://commons.stmarytx.edu/thestmaryslawjournal/vol52/iss3/4/" title="The Ratio Method, St. Mary’s Law Journal (2021)"><img class="cov" src="cover.jpg" alt="Printed reprint of The Ratio Method, St. Mary’s Law Journal, 2021" width="584" height="864"></a><img src="sf.jpg?v=2" alt="At the Golden Gate Bridge, San Francisco" width="720" height="480"></div>
 <ul class="edu">
   <li>University of California, Berkeley<span class="v">B.A., Economics, Highest Distinction</span></li>
   <li>UCLA School of Law<span class="v">J.D., Dean’s Scholar</span></li>
