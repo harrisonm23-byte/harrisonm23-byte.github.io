@@ -84,6 +84,10 @@ h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
 .edu{list-style:none;padding:0;margin:8px 0 0}
 .edu li{margin:0 0 8px}
 .edu .v{display:block;padding-left:26px;color:var(--sub);font-size:16.5px}
+.about{display:flex;gap:30px;align-items:flex-start}
+.photo{width:170px;height:170px;border-radius:50%;object-fit:cover;flex:none;margin-top:6px}
+@media (max-width:640px){.about{display:flex;flex-direction:column-reverse;align-items:center;gap:8px}}
+@media print{.photo{display:none}}
 footer{max-width:760px;margin:0 auto;padding:0 16px 56px;font-size:15px;color:var(--sub)}
 footer .in{border-top:1px solid var(--rule);padding-top:18px}
 @media (max-width:600px){
@@ -125,6 +129,7 @@ footer .in{border-top:1px solid var(--rule);padding-top:18px}
       <p>I work on model evaluations at SpaceXAI. I write evaluation items and grading rubrics for Grok, and review other graders’ scoring. My latest paper, <a href="https://harrisonm23-byte.github.io/push-down-the-mountain/"><i>A Push Down the Mountain</i></a>, tests whether framed messages push a long-horizon trading agent toward collusion, and whether steering its internal state changes that.</p>
       <p class="interests">Research interests: <b>agent safety evaluations</b>, <b>interpretability and steering</b>, <b>the macroeconomics of AI</b> and <b>technical AI governance</b>.</p>
     </div>
+    <img class="photo" src="headshot.jpg" alt="Harrison C. Margolin" width="170" height="170">
   </div>
 </div>
 
