@@ -82,16 +82,18 @@ h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
 .edu li{margin:0 0 8px}
 .edu .v{display:block;padding-left:26px;color:var(--sub);font-size:16.5px}
 .about{display:flow-root}
-.photo{width:170px;height:170px;border-radius:50%;object-fit:cover;float:right;shape-outside:circle(50%);shape-margin:14px;margin:6px 0 10px 26px;filter:brightness(1.18);border:0;background:none;display:block}
+.pic{float:right;width:170px;margin:6px 0 8px 26px;text-align:center}
+.photo{width:170px;height:170px;border-radius:50%;object-fit:cover;filter:brightness(1.18);display:block}
+.pic figcaption{font-size:14px;color:var(--sub);font-style:italic;margin-top:6px;line-height:1.2}
 
-@media (min-width:1000px){main{position:relative}.abstract{position:static}.photo{float:none;shape-outside:none;margin:0;position:absolute;right:-64px;top:70px;width:160px;height:160px}}
-@media print{.photo{display:none}}
+@media (min-width:1000px){main{position:relative}.abstract{position:static}.pic{float:none;margin:0;position:absolute;right:-64px;top:62px;width:160px}.photo{width:160px;height:160px}}
+@media print{.pic{display:none}}
 footer{max-width:760px;margin:0 auto;padding:0 16px 56px;font-size:15px;color:var(--sub)}
 footer .in{border-top:1px solid var(--rule);padding-top:18px}
 @media (max-width:600px){
   main{padding-top:48px}
   .about{grid-template-columns:1fr;gap:14px}
-  .photo{float:none;width:140px;height:140px;margin:0 auto 12px}
+  .pic{float:none;width:140px;margin:0 auto 12px}.photo{width:140px;height:140px}
   .about p{text-align:left;hyphens:manual}
   .news li{grid-template-columns:1fr;gap:0}
   .bib>li{padding-left:34px}
@@ -125,6 +127,7 @@ footer .in{border-top:1px solid var(--rule);padding-top:18px}
   <h2>About</h2>
   <div class="about">
     <div>
+      <figure class="pic"><img class="photo" src="headshot.jpg?v=6" alt="Harrison C. Margolin" width="170" height="170"><figcaption>Palo Alto, CA</figcaption></figure>
       <p>My research focuses on AI safety evaluations, AI governance and regulation, and the macroeconomic impact of the AI industry.</p>
       <p>I work on model evaluations at SpaceXAI. My latest paper, <a href="https://harrisonm23-byte.github.io/push-down-the-mountain/"><i>A Push Down the Mountain</i></a>, tests whether behavioral-economic framing pushes a long-horizon agent toward market collusion, and whether its internal states can be used to predict and prevent it.</p>
       <p class="interests">Research interests: <b>agent safety evaluations</b>, <b>interpretability and steering</b>, <b>the macroeconomics of AI</b> and <b>technical AI governance</b>.</p>
