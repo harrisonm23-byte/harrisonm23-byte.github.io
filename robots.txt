@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harrisonm23-byte.github.io/sitemap.xml
