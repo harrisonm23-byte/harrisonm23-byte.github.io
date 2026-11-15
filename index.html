@@ -94,7 +94,9 @@ h2{font-weight:700;font-size:23px;line-height:1.2;margin:0 0 14px}
 
 @media (min-width:1000px){main{position:relative}.abstract{position:static}.pic{float:none;margin:0;position:absolute;right:-40px;top:72px;width:130px}.photo{width:130px;height:130px}}
 @media print{.pic{display:none}}
-.sf{float:right;width:250px;height:auto;border-radius:3px;margin:-34px 48px 0 24px}
+.sf{float:right;width:250px;margin:-34px 48px 0 24px}
+.sf img{display:block;width:100%;height:auto;border-radius:3px}
+.sf figcaption{font-size:12.5px;color:var(--sub);text-align:center;margin-top:5px}
 #education{display:flow-root}
 @media (max-width:640px){.sf{float:none;display:block;width:100%;margin:10px 0 14px}}
 @media print{.sf{display:none}}
@@ -176,7 +178,7 @@ body{border-top:40px solid var(--link)}
 
 <section id="education" class="lst">
 <h2>Education</h2>
-<img class="sf" src="sf.jpg?v=3" alt="At the Golden Gate Bridge, San Francisco" width="720" height="481">
+<figure class="sf"><img src="sf.jpg?v=3" alt="With my dad at the Golden Gate Bridge, San Francisco" width="720" height="481"><figcaption>With my dad in San Francisco</figcaption></figure>
 <ul class="edu">
   <li>University of California, Berkeley<span class="v">B.A., Economics, with Highest Distinction</span><span class="c">Probability &amp; Statistics, Econometrics, Game Theory &amp; Behavioral Economics, Advanced Micro- and Macroeconomics, Economic History, Financial Economics, Art History</span></li>
   <li>University of California, Los Angeles<span class="v">J.D., Dean’s Scholar</span><span class="c">Legislation &amp; Regulation, Governance Responses to Transformative Societal Trends</span></li>
